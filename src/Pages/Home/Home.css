@@ -1,0 +1,139 @@
+.imghome1 {
+  width: 100%;
+}
+.HomeSecOne {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('https://www.colliers.com/-/media/images/colliers/asia/regional-image-library/1536x1040-hero-researchnews/generic1536x1040pxkl.ashx');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.HomeSecOneCommint {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  overflow-y: auto;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: left;
+}
+.HomeSecOneCommint h1 {
+  font-size: 60px;
+}
+.HomeSecOneCommint p {
+  font-size: 18px;
+}
+.HomeSecTwo {
+  padding: 100px 0;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+@media screen and (max-width: 768px) {
+  .HomeSecOneCommint h1 {
+    font-size: 40px;
+  }
+}
+
+.HomeSecThree {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url('https://www.theagilityeffect.com/app/uploads/2019/03/00_VINCI-ICONOGRAPHIE-GettyImages-890132412_1280x680.jpg');
+  background-size: cover;
+}
+.HomeSecFour {
+  background-color: white !important;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 300px !important;
+  object-fit: cover;
+}
+.HomeSecFive {
+  background-color: #f5f5f5 !important;
+}
+.HomeSecsix {
+  width: 100%;
+  height: 100vh;
+  background: url('https://thumbs.dreamstime.com/b/stylish-sunny-office-room-high-rise-building-glass-table-laptop-chair-office-room-high-rise-building-154145629.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.HomeSecsix .HomeSecOneCommint {
+  overflow-y: hidden;
+}
+
+.HomeSecsix .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.HomeSecsix .swiper-slide {
+  display: flex;
+  height: 300px !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.HomeSecsix .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .HomeSecsix {
+    height: 400px !important;
+  }
+}
+.News,
+.Production,
+.Products,
+.Services,
+.Constructor,
+.About,
+.Contacts {
+  width: 100%;
+  height: 100vh;
+  background: url('https://thumbs.dreamstime.com/b/stylish-sunny-office-room-high-rise-building-glass-table-laptop-chair-office-room-high-rise-building-154145629.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

@@ -1,0 +1,13 @@
+.ClientCommit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    width: 100%;
+}
+.ClientCommit .boder{
+    width: 300px;
+    height: 1px;
+    background-color: white;
+}

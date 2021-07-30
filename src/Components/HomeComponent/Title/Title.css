@@ -1,0 +1,9 @@
+.Title h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+.Title span {
+  width: 300px;
+  height: 2px;
+  margin-top: 20px;
+}

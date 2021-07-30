@@ -1,0 +1,50 @@
+.HomeCard{
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+align-items:center ;
+transition: all 0.3s linear;
+box-shadow: -5px 0 10px 0px  rgba(128, 128, 128, 0.4) ;
+border-radius: 10px;
+border: 1px rgba(128, 128, 128, 0.4)  solid ;
+
+}
+.HomeCard h4, .HomeCard p{
+    /* color: #112045; */
+    letter-spacing:0.7px;
+    margin: 20px 0;
+
+}
+.HomeCard h4{
+    font-size: 24px;
+}
+.HomeCard .icon{
+    font-size: 42px;
+    /* color: #112045; */
+}
+.HomeCard:hover{
+    box-shadow: -5px  10px 20px 0  rgba(128, 128, 128, 0.5) ;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+

@@ -1,0 +1,23 @@
+.IconCard .icon{
+  margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white !important;
+  color: yellow !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  transition: all 0.3s linear;
+}
+.IconCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.IconCard:hover .icon{
+  color: black !important;
+
+}
