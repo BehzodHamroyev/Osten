@@ -8,7 +8,6 @@ import PartnerImg5 from '../../img/partner5.png';
 import PartnerImg6 from '../../img/partner6.png';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import './style.css';
 // Import Swiper styles
 import 'swiper/swiper.min.css';
 import 'swiper/components/pagination/pagination.min.css';
