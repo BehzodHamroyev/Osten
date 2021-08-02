@@ -36,7 +36,7 @@ const HomeSecSeven = () => {
       <Swiper slidesPerGroup={4} slidesPerView={4} pagination={true} className="mySwiper">
         {Imgs.map((v, i) => (
           <SwiperSlide>
-           {/* <img src={v.img} className="w-50 h-25" alt="" /> */}
+           <img src={v.img} className="w-50 h-auto" alt="" />
           </SwiperSlide>
         ))}
       </Swiper>

@@ -3,6 +3,7 @@ import AllHomePage from '../AllHomePage/AllHomePage';
 import './Osten.css';
 import Title from '../HomeComponent/Title/Title';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Data from '../../datas/Datas';
 
 // Import Swiper styles
 import 'swiper/swiper.min.css';
@@ -13,21 +14,24 @@ import '../../Pages/Home/Home.css';
 // import Swiper core and required modules
 import SwiperCore, { Navigation } from 'swiper/core';
 import HomeSecSeven from '../../Container/Home/HomeSecSeven';
+import { useParams } from 'react-router';
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
-
 const Osten = (props) => {
-  console.log(props.data.color);
+  const { category } = useParams();
+  console.log(category);
+  const data = Data[category];
+  console.log(data);
   return (
     <div className={`${props.className} Osten `}>
-      <AllHomePage title={props.data.title} />
-      <Title title={props.data.title} color={props.data.color} />
-      <p>{props.data.topCommit}</p>
+      <AllHomePage title={data.title} />
+      <Title title={data.title} color={data.color} />
+      <p>{data.topCommit}</p>
       <div className="row container">
         <div className="col-md-6">
           <Swiper navigation={true} className="mySwiper h-100 w-100">
-            {props.data.imgs.map((v, i) => {
+            {data.imgs.map((v, i) => {
               return (
                 <SwiperSlide key={i} className="overflow-auto">
                   <div>
@@ -35,21 +39,21 @@ const Osten = (props) => {
                   </div>
                 </SwiperSlide>
               );
-            })}P
+            })}
           </Swiper>
         </div>
         <div className="col-md-6">
-          <p>{props.data.rightCommit1}</p>
+          <p>{data.rightCommit1}</p>
           <h5>Detail 2</h5>
-          <p>{props.data.rightCommit2}</p>
+          <p>{data.rightCommit2}</p>
           <h5>Detail 3</h5>
-          <p>{props.data.rightCommit3}</p>
+          <p>{data.rightCommit3}</p>
         </div>
       </div>
       <div className="text-start container">
-        <h5>Detail 1</h5> <p>{props.data.bottomCommit}</p>
+        <h5>Detail 1</h5> <p>{data.bottomCommit}</p>
       </div>
-      
+
       <HomeSecSeven />
     </div>
   );

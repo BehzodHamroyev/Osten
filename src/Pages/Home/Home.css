@@ -13,7 +13,7 @@
 }
 .HomeSecOneCommint {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   top: 0;
   position: absolute;
   overflow-y: auto;
@@ -57,7 +57,7 @@
 }
 .swiper-container {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .swiper-slide {
@@ -82,7 +82,7 @@
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 300px !important;
+  height: auto !important;
   object-fit: cover;
 }
 .HomeSecFive {
@@ -102,12 +102,12 @@
 
 .HomeSecsix .swiper-container {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .HomeSecsix .swiper-slide {
   display: flex;
-  height: 300px !important;
+  height: auto !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
