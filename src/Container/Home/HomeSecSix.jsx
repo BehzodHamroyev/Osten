@@ -51,7 +51,7 @@ const HomeSecsix = () => {
         >
           {data.map((v, i) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={i}>
                 <ClientCommit data={v} />
               </SwiperSlide>
             );

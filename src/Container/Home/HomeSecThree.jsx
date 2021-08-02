@@ -36,7 +36,7 @@ const HomeSecThree = () => {
         <Fade bottom>
           <div className="row mt-5 m-0">
             {data.map((v, i) => (
-              <HomeCard data={v} />
+              <HomeCard key={i} data={v} />
             ))}
           </div>
         </Fade>

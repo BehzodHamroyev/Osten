@@ -1,0 +1,18 @@
+.Footer {
+  background-color: #09152d;
+  text-align: left !important;
+}
+.Footer .icon {
+  font-size: 32px;
+  margin: 5px;
+  cursor: pointer;
+}
+.Footer .icon:hover {
+  color: rgb(233, 157, 1);
+}
+.Footer a {
+  color: white;
+}
+.Footer a:hover {
+  color: rgb(233, 157, 1);
+}

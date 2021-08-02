@@ -1,11 +1,10 @@
 import React from 'react';
+import AllHomePage from '../../Components/AllHomePage/AllHomePage';
 
 const Constructor = () => {
   return (
     <div className="Constructor">
-      <div className="HomeSecOneCommint d-flex justify-content-center align-items-center">
-        <h1>Constructor</h1>
-      </div>
+      <AllHomePage title="Constructor"/>
     </div>
   );
 };

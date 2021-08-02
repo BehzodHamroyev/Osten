@@ -1,0 +1,37 @@
+.collaps {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 150px;
+}
+.collaps button {
+  width: 150px;
+  height: 70px;
+}
+.content {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #09142e;
+  color: white !important;
+  border-radius: 0 0 10px 10px;
+}
+.content:hover {
+  color: yellow !important;
+}
+.content p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardImg{
+  transition: all 0.5s linear;
+}
+.cardImg:hover{
+  transform: translateY(-50px);
+}

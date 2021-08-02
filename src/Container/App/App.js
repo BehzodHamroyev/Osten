@@ -1,5 +1,4 @@
 import { Route, Switch } from 'react-router-dom';
-import Header from '../Header/Header';
 import './App.css';
 import Home from '../../Pages/Home/Home';
 import About from '../../Pages/About/About'
@@ -9,6 +8,8 @@ import Services from '../../Pages/Services/Services';
 import Constructor from '../../Pages/Constructor/Constructor';
 import News from '../../Pages/News/News';
 import Contacts from '../../Pages/Contacts/Contacts'
+import Container from '../container/container';
+import Category from '../../Pages/Category/Category';
 
 const routs = [
   { exect: true, component: <Home />, path: '/', title: 'Home' },
@@ -23,14 +24,14 @@ const routs = [
 function App() {
   return (
     <div className="App">
-      <Header />
+     <Container>
       <Switch>
         {
-          routs.map((v, i) => <Route exact path={v.path} key={v.path} >{v.component}</Route>
-
-          )
+          routs.map((v, i) => <Route exact path={v.path} key={v.path} >{v.component}</Route>)
         }
+        <Route path="/:category" component={Category}/>
       </Switch>
+      </Container>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../logo.svg';
 import { useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { NavLink, nav } from 'react-router-dom';
 import Slide from 'react-reveal/Slide';
 import './Header.css';
 const data = [
@@ -19,12 +20,15 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
   }
-  state = { showNav: false };
+  state = {
+    showNav: false,
+  };
   onClickBars = () => {
     this.setState((state) => {
       return { showNav: !state.showNav };
     });
   };
+
   render() {
     return (
       <div className=" Header Container-fluid shadow ">
@@ -32,13 +36,19 @@ class Header extends React.Component {
           <Link to="/home">
             <img src={Logo} className="logo" alt="" />
           </Link>
-          <div className={ ` media ${(this.state.showNav && ' d-flex') || ''}  `}>
+          <div
+            className={` media ${(this.state.showNav && ' d-flex') || ''}  `}
+          >
             {data.map((v, i) => {
               return (
-                <Slide  right duration={400*i}>
-                <Link key={v.title} className="text-warning mx-2 mt-2" to={v.to}>
-                  {v.title}
-                </Link>
+                <Slide key={i} right duration={400 * i}>
+                  <NavLink
+                    className=" mx-2 mt-2"
+                    activeClassName="activeLink"
+                    to={v.to}
+                  >
+                    {v.title}
+                  </NavLink>
                 </Slide>
               );
             })}
@@ -48,13 +58,13 @@ class Header extends React.Component {
               onClick={this.onClickBars}
               className={`${(!this.state.showNav && 'd-block') || 'd-none'}`}
             >
-                <FaBars />
+              <FaBars />
             </div>
             <div
               onClick={this.onClickBars}
               className={`${(!this.state.showNav && 'd-none') || 'd-block'}`}
             >
-            <FaTimes />
+              <FaTimes />
             </div>
           </div>
         </div>

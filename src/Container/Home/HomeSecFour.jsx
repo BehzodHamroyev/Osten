@@ -67,7 +67,7 @@ const HomeSecFour = () => {
         >
           {data.map((v, i) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide  key={i}>
                 <SwiperCard data={v} key={i} />
               </SwiperSlide>
             );
