@@ -30,7 +30,7 @@ const Imgs = [
 
 const HomeSecSeven = () => {
   return (
-    <div className="HomeSecSeven my-5 py-5">
+    <div className="HomeSecSeven  py-5">
       <Title title="Наши партнеры" color="dark" />
       <Swiper slidesPerGroup={4} slidesPerView={4} pagination={true} className="mySwiper">
         {Imgs.map((v, i) => (

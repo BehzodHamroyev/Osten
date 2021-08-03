@@ -36,7 +36,10 @@
 }
 @media screen and (max-width: 768px) {
   .HomeSecOneCommint h1 {
-    font-size: 40px;
+    font-size: 20px !important;
+  }
+  .HomeSecOne button{
+    font-size: 12px !important;
   }
 }
 
@@ -119,6 +122,7 @@
   width: 100%;
 }
 @media screen and (max-width: 768px) {
+
   .HomeSecsix {
     height: 400px !important;
   }

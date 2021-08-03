@@ -1,7 +1,8 @@
 import React from 'react';
 import AllHomePage from '../../Components/AllHomePage/AllHomePage';
 import Title from '../../Components/HomeComponent/Title/Title';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import './Contacts.css';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 const Contacts = () => {
   return (
     <div className="Contacts">
@@ -16,41 +17,53 @@ const Contacts = () => {
           loading="lazy"
         ></iframe>
       </div>
-      <h3 className="mt-5">Режим работы с 09:00 до 18:00</h3>
-      <div className=" containr px-5 d-flex row justify-content-around mt-3 align-items-center">
-        <p className="col-md-4"><span className="fw-bold">Location</span> город Ташкент ...</p>
-        <p className="col-md-4">
-          <span className="fw-bold">Telephon</span> (+99897) 123-45-87, (+99897) 123-45-87
-        </p>
-        <p className="col-md-4"><span className="fw-bold">Email:</span> info@lift.uz</p>
-      </div>
-      <div className="">
-        <Form className="row d-flex justify-content-center">
-          <FormGroup className="col-8 mt-3">
-            <Label className="mb-3" for="exampleEmail">Your Full Name</Label>
-            <Input
-              type="text"
-              name="text"
-              id="Name"
-              placeholder="with a placeholder"
-            />
-          </FormGroup>
-          <FormGroup className="col-8 mt-3">
-            <Label className="mb-3" for="exampleEmail">Email</Label>
-            <Input
-              type="email"
-              name="email"
-              id="exampleEmail"
-              placeholder="with a placeholder"
-            />
-          </FormGroup>
-          <FormGroup className="col-8 mt-3">
-            <Label className="mb-3" for="exampleFile">Comment</Label>
-            <Input type="textarea" name="text" id="exampleText" />
-          </FormGroup>
-         
-        </Form>
-        <button className="w-25 mt-5 btn btn-warning">Send</button>
+      <div>
+        <h3 className="mt-5">Режим работы с 09:00 до 18:00</h3>
+        <div className=" containr px-5 d-flex row justify-content-around mt-3 align-items-center">
+          <p className="col-md-4">
+            <span className="fw-bold">Location</span> город Ташкент ...
+          </p>
+          <p className="col-md-4">
+            <span className="fw-bold">Telephon</span> (+99897) 123-45-87,
+            (+99897) 123-45-87
+          </p>
+          <p className="col-md-4">
+            <span className="fw-bold">Email:</span> info@lift.uz
+          </p>
+        </div>
+        <div className="">
+          <Form className="row d-flex justify-content-center">
+            <FormGroup className="col-8 mt-3">
+              <Label className="mb-3" for="exampleEmail">
+                Your Full Name
+              </Label>
+              <Input
+                type="text"
+                name="text"
+                id="Name"
+                placeholder="with a placeholder"
+              />
+            </FormGroup>
+            <FormGroup className="col-8 mt-3">
+              <Label className="mb-3" for="exampleEmail">
+                Email
+              </Label>
+              <Input
+                type="email"
+                name="email"
+                id="exampleEmail"
+                placeholder="with a placeholder"
+              />
+            </FormGroup>
+            <FormGroup className="col-8 mt-3">
+              <Label className="mb-3" for="exampleFile">
+                Comment
+              </Label>
+              <Input type="textarea" name="text" id="exampleText" />
+            </FormGroup>
+          </Form>
+          <button className="w-25 mt-5 btn btn-warning">Send</button>
+        </div>
       </div>
     </div>
   );

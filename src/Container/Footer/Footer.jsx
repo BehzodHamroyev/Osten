@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
         <div className="col-md-4 h-100 ">
           <div className="d-flex justify-content-between   flex-column">
-            <h4>ПОСЛЕДНИЕ НОВОСТИ</h4>
+            <h5>ПОСЛЕДНИЕ НОВОСТИ</h5>
             <Link to="news-1">
               Построен новый лифт
             </Link>
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
         <div className="col-md-4">
           <div className="d-flex justify-content-between   flex-column">
-            <h4>КОНТАКТЫ</h4>
+            <h5>КОНТАКТЫ</h5>
             <p>
               <span className="fw-bold">Номер телефона:</span> +998 (93)
               511-11-17 +998 (91) 791-51-15

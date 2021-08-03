@@ -16,3 +16,15 @@
 .Footer a:hover {
   color: rgb(233, 157, 1);
 }
+@media screen and (max-width:768px) {
+  .Footer p{
+    font-size: 12px !important;
+  }
+  .Footer h5{
+    font-size: 12px;
+  }
+  .Footer .icon{
+    font-size: 18px;
+  }
+  
+}

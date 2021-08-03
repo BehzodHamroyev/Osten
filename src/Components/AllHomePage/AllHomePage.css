@@ -12,11 +12,22 @@
 }
 .before {
   position: absolute;
-  text-align: left;
-  padding: 250px 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 0 50px;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width:768px) {
+  .before h1{
+    font-size: 18px;
+  }
+  .before p{
+    font-size: 12px;
+  }
 }

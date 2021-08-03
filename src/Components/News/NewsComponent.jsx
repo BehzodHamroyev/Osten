@@ -12,7 +12,7 @@ const NewsComponent = (props) => {
       >
         <h1 className="mt-5">{props.data.title}</h1>
         <p>{props.data.subTitle}</p>
-        <img src={props.data.img} alt="" />
+        <img src={props.data.img} className="w-50" alt="" />
         {props.data.comments.map((v, i) => {
           return (
             <div>
