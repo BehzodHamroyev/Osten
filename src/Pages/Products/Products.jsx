@@ -99,7 +99,7 @@ class Products extends React.Component {
                 <div key={i} className="col-md-3 ">
                   <Link to={v.to}>
                     <div className="position-relative cardImg">
-                      <img src={v.img} alt="" className="w-100" />
+                      <img src={v.img} alt="" className="w-100 mt-5" />
                       <div className="content">
                         <p>{v.title}</p>
                       </div>

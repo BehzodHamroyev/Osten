@@ -41,9 +41,9 @@ class Header extends React.Component {
           >
             {data.map((v, i) => {
               return (
-                <Slide key={i} right duration={400 * i}>
+                <Slide   key={i} right duration={400 * i}>
                   <NavLink
-                    className=" mx-2 my-5"
+                    className="py-3"
                     activeClassName="activeLink"
                     to={v.to}
                   >
