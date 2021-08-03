@@ -33,7 +33,7 @@ class Header extends React.Component {
     return (
       <div className=" Header Container-fluid shadow ">
         <div className="container d-flex justify-content-between py-4 ">
-          <Link to="/home">
+          <Link  to="/">
             <img src={Logo} className="logo" alt="" />
           </Link>
           <div
@@ -43,7 +43,7 @@ class Header extends React.Component {
               return (
                 <Slide key={i} right duration={400 * i}>
                   <NavLink
-                    className=" mx-2 mt-2"
+                    className=" mx-2 my-5"
                     activeClassName="activeLink"
                     to={v.to}
                   >

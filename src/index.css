@@ -15,3 +15,8 @@ code {
 .row{
   margin: 0 !important;
 }
+@media screen and (max-width:768px) {
+  button{
+    font-size: 12px !important;
+  }
+}

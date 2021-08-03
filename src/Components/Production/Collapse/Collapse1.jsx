@@ -31,11 +31,11 @@ const Collapse1 = (props) => {
       {data.map((v,i) => (
         <div key={i}><CollapsTitle  title={v.title} subTitle={v.subTitle} /></div>
       ))}
-      <img src="https://osten.vercel.app/images/diff/img.jpg" alt="" />
+      <img src="https://osten.vercel.app/images/diff/img.jpg" className="w-100" alt="" />
       {data2.map((v,i) => (
         <div key={i}><CollapsTitle  title={v.title} subTitle={v.subTitle} /></div>
       ))}
-      <img src="https://osten.vercel.app/images/diff/img2.jpg" alt="" />
+      <img src="https://osten.vercel.app/images/diff/img2.jpg" className="w-100" alt="" />
     </div>
   );
 };
