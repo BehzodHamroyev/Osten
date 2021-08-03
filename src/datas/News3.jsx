@@ -1,9 +1,9 @@
 const data = 
   {
     tip: 'news',
-    title: 'Построен новый лифт',
-    subTitle: 'Построен новый лифт в этом году',
-    img: 'https://orzu-tehnopark.s3.amazonaws.com/OSTEN-ST-7.jpg',
+    title: 'ДИСПЕТЧЕРИЗАЦИЯ',
+    subTitle: 'Любое современное здание, будь это жилой дом, торговый офисный, центр, или спортивное сооружение обязательно содержит солидный объем инженерного оборудования.',
+    img: 'https://orzu-tehnopark.s3.amazonaws.com/OSTEN-L1.jpg',
     comments: [
       {
         title: 'What is Lorem Ipsum?',

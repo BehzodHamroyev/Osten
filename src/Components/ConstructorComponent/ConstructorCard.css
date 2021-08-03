@@ -1,0 +1,6 @@
+.ConstructorCard div  img{
+    box-shadow: 0 2px 4px 4px rgba(128, 128, 128, 0.4);
+}
+.ConstructorCard div  img:hover{
+    box-shadow: 0 4px 8px 8px rgba(128, 128, 128, 0.4);
+}

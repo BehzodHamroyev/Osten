@@ -1,0 +1,14 @@
+.liftBg {
+  position: relative;
+}
+.ConstructorRight {
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.handle {
+  position: absolute;
+  top: 250px;
+  left: 125px;
+  z-index: 1000;
+}

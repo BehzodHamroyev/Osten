@@ -32,16 +32,16 @@ const Footer = () => {
         <div className="col-md-4 h-100 ">
           <div className="d-flex justify-content-between   flex-column">
             <h4>ПОСЛЕДНИЕ НОВОСТИ</h4>
-            <Link to="https://osten.vercel.app/news/TmV3c05vZGU6MQ==">
+            <Link to="news-1">
               Построен новый лифт
             </Link>
             <Link
               className="my-4"
-              to="https://osten.vercel.app/news/TmV3c05vZGU6Mw=="
+              to="news-2"
             >
               РЕМОНТ И ОБСЛУЖИВАНИЕ ЭСКАЛАТОРОВ
             </Link>
-            <Link to="https://osten.vercel.app/news/TmV3c05vZGU6NA==">
+            <Link to="news-3">
               ДИСПЕТЧЕРИЗАЦИЯ
             </Link>
           </div>

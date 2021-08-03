@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import React from 'react';
 import AllHomePage from '../../Components/AllHomePage/AllHomePage';
 import Title from '../../Components/HomeComponent/Title/Title';

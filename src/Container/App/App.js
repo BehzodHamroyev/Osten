@@ -9,7 +9,7 @@ import Constructor from '../../Pages/Constructor/Constructor';
 import News from '../../Pages/News/News';
 import Contacts from '../../Pages/Contacts/Contacts'
 import Container from '../container/container';
-import Osten from '../../Components/Products/Osten';
+import Category from '../../Pages/Category/Category';
 
 const routs = [
   { exect: true, component: <Home />, path: '/', title: 'Home' },
@@ -29,7 +29,7 @@ function App() {
         {
           routs.map((v, i) => <Route exact path={v.path} key={v.path} >{v.component}</Route>)
         }
-        <Route path="/:category" component={Osten}/>
+        <Route path="/:category" component={Category}/>
       </Switch>
       </Container>
     </div>

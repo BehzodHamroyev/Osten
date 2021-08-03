@@ -31,7 +31,7 @@ const Osten = (props) => {
       <div className="row container">
         <div className="col-md-6">
           <Swiper navigation={true} className="mySwiper h-100 w-100">
-            {data.imgs.map((v, i) => {
+            {data.imgs?.map((v, i) => {
               return (
                 <SwiperSlide key={i} className="overflow-auto">
                   <div>
@@ -54,7 +54,7 @@ const Osten = (props) => {
         <h5>Detail 1</h5> <p>{data.bottomCommit}</p>
       </div>
 
-      <HomeSecSeven />
+<div className="py-4">      <HomeSecSeven /></div>
     </div>
   );
 };

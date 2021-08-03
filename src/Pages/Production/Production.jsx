@@ -1,3 +1,5 @@
+
+import React from 'react';
 import AllHomePage from '../../Components/AllHomePage/AllHomePage';
 import Collapse1 from '../../Components/Production/Collapse/Collapse1';
 import Title from '../../Components/HomeComponent/Title/Title';
@@ -5,7 +7,7 @@ import HomeSecSeven from '../../Container/Home/HomeSecSeven';
 import Collapse2 from '../../Components/Production/Collapse/Collapse2';
 import Collapse3 from '../../Components/Production/Collapse/Collapse3';
 import Collapse4 from '../../Components/Production/Collapse/Collapse4';
-import React from 'react';
+
 
 class Production extends React.Component {
   constructor(props) {
@@ -14,7 +16,6 @@ class Production extends React.Component {
   state = { activ1: false, activ2: true, activ3: true, activ4: true };
   clickActive1 = () => {
     this.setState((state) => {
-     
       return {
         activ1: !this.state.activ1,
         activ2: true,

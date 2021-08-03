@@ -1,4 +1,5 @@
 const data= {
+  tip: 'osten',
     title: 'Osten L2',
     color: 'dark',
     imgs: [
