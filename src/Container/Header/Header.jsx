@@ -43,7 +43,7 @@ class Header extends React.Component {
               return (
                 <Slide   key={i} right duration={400 * i}>
                   <NavLink
-                    className="py-3"
+                    className="py-3 ms-3"
                     activeClassName="activeLink"
                     to={v.to}
                   >
